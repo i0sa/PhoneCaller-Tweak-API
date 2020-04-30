@@ -35,6 +35,18 @@ Base public API:
 
 >  `searchComplete`: You get here that an engine has finished its query
 
+### Example
+
+       [[PhoneCallerHelper alloc] searchForNumber:@"911" completed:^(PCCaller * _Nonnull details) {
+            PCLog(@"Got number info .. %@", details);
+        } searching:^(PCEngine * _Nonnull engine) {
+            PCLog(@"Searching Now.. %@", engine.name);
+            
+        } searchItem:^(PCSearchItem * _Nonnull item) {
+            self.searchItem = item;
+        } searchComplete:nil]; // in case you do not need it, just nil it
+
+
 # PCSearchItemVC
 Two main methods:
 
