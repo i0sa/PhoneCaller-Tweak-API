@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "PCCaller.h"
+#import "PCEngine.h"
+#import "PCSearchItem.h"
 
 @interface PhoneCallerHelper : NSObject
 
