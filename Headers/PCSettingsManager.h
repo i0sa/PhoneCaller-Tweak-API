@@ -19,6 +19,14 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSDictionary *)country;
 -(BOOL)isIncomingCallsEnabled;
 -(BOOL)isOutgoingCallsEnabled;
+
+/*
+Modern
+BasicLight
+BasicDark
+CompactLight
+CompactDark
+*/
 -(NSString *)style;
 -(float)backgroundTransparent;
 -(BOOL)showForContactsEnabled;
