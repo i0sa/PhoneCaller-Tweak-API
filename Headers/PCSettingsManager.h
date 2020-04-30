@@ -30,6 +30,7 @@ CompactDark
 -(NSString *)style;
 -(float)backgroundTransparent;
 -(BOOL)showForContactsEnabled;
+// returns number of seconds to display the Phonecaller's view, 0 means it will be displayed forever (or until user dismisses)
 - (int)displayDuration;
 - (BOOL)showInCallButton;
 @end
