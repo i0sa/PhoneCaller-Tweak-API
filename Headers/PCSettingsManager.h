@@ -32,6 +32,8 @@ CompactDark
 -(BOOL)showForContactsEnabled;
 // returns number of seconds to display the Phonecaller's view, 0 means it will be displayed forever (or until user dismisses)
 - (int)displayDuration;
+
+// this refers to the button that appears to present Search Item View Controller
 - (BOOL)showInCallButton;
 @end
 
