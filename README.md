@@ -23,7 +23,8 @@ in your Makefile, add this to the Libraries :
     
 ## Loading Dylib
 
-If your tweak hooks into a specific app, you may need to load dylib manually
+If your tweak hooks into a specific app, and not InCallServices or SpringBoard, you may need to load dylib manually (and probably make sure the file exists first and not loaded before)
+
     %ctor {
         ...
             void *loadPC = dlopen("/usr/lib/libphonecaller3.dylib", RTLD_LAZY);
