@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "PCEngine.h"
 #import "PCCaller.h"
-#import "PCSettingItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
