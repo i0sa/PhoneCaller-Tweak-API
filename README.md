@@ -13,9 +13,11 @@ After installing PhoneCaller3, you will find libphonecaller3.dylib in /usr/lib. 
 and then copy PhoneCallerHeaders folder into $THEOS/include
 
 in your Tweak.xm, you can import with : 
+
     #import "PhoneCallerHeaders/PhoneCaller.h"
 
 in your Makefile, add this to the Libraries :
+
     Tweak_LIBRARIES = phonecaller3
 
 
