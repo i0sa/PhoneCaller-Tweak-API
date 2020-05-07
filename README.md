@@ -19,6 +19,19 @@ in your Tweak.xm, you can import with :
 in your Makefile, add this to the Libraries :
 
     Tweak_LIBRARIES = phonecaller3
+    
+    
+## Loading Dylib
+
+If your tweak hooks into a specific app, you may need to load dylib manually
+    %ctor {
+        ...
+            void *loadPC = dlopen("/usr/lib/libphonecaller3.dylib", RTLD_LAZY);
+            if(loadPC){
+              // loaded successfully
+            }
+        ...
+    }
 
 
 # PhoneCallerHelper
