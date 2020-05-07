@@ -7,6 +7,17 @@ This repository introduces a public API for developers who would like to integra
   1 - Display details for a `PCSearchItem` that is received from the **PhoneCallerHelper** API
   2- Directly fire a search query inside this ViewController
 
+# Usage
+
+After installing PhoneCaller3, you will find libphonecaller3.dylib in /usr/lib. Copy this dylib into $THEOS/lib 
+and then copy PhoneCallerHeaders folder into $THEOS/include
+
+in your Tweak.xm, you can import with : 
+    #import "PhoneCallerHeaders/PhoneCaller.h"
+
+in your Makefile, add this to the Libraries :
+    Tweak_LIBRARIES = phonecaller3
+
 
 # PhoneCallerHelper
 
