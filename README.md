@@ -96,6 +96,7 @@ Second one is as simple as passing the search data/phone number requested , and 
 YOU MUST include PhoneCaller logo, if you're showing results in your own view.. using this line:
 
 For white logo : [PCImageManager imageNamed:@"WatermarkBright.png" withPath:@"Settings"];
+
 for dark logo : [PCImageManager imageNamed:@"Watermark.png" withPath:@"Settings"];
 
 
