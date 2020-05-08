@@ -91,5 +91,12 @@ Second one is as simple as passing the search data/phone number requested , and 
     
     [self.navigationController  pushViewController:view animated:true];
 
+## Watermark & Copyrights
+
+YOU MUST include PhoneCaller logo, if you're showing results in your own view.. using this line:
+
+For white logo : [PCImageManager imageNamed:@"WatermarkBright.png" withPath:@"Settings"];
+for dark logo : [PCImageManager imageNamed:@"Watermark.png" withPath:@"Settings"];
+
 
 Note: You don't need to format the phone number, because I already do this, based on the user's country.
