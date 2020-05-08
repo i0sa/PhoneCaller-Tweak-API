@@ -71,8 +71,9 @@ Base public API:
             
         } searchItem:^(PCSearchItem * _Nonnull item) {
             self.searchItem = item;
-        } searchComplete:nil]; // in case you do not need it, just nil it
-
+        } searchComplete:^(PCEngine * _Nonnull item) {
+         
+       }];
 
 # PCSearchItemVC
 Two main methods:
