@@ -34,6 +34,12 @@ If your tweak hooks into a specific app, and not InCallServices or SpringBoard, 
         ...
     }
 
+## Control & Dependancy 
+
+Your tweak should depend on existance of mine, or else library will not be found and your tweak will not be usable
+
+     Depends: com.i0sa.phonecaller3
+
 
 # PhoneCallerHelper
 
